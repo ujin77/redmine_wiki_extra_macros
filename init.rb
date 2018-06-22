@@ -1,14 +1,14 @@
 Redmine::Plugin.register :redmine_wiki_extra_macros do
     name 'Redmine plugin extending macros Wiki.'
-    author 'Eugene M'
+    author 'Eugene M.'
     description 'Redmine plugin extending macros Wiki.'
     version '0.0.1'
-    url 'http://example.com/path/to/plugin'
-    author_url 'https://am-bits.com'
+    url 'https://github.com/ujin77/redmine_wiki_extra_macros'
+    author_url 'https://github.com/ujin77'
 
     module ExtWikiMacros
 	Redmine::WikiFormatting::Macros.register do
-	    desc "This plugin adds a macro to Wiki Redmine. Syntax: <pre>{{project_id}}</pre>"
+	    desc "This plugin adds a macro to Wiki Redmine. <pre>{{project_id}} {{project_name}} {{project_email(example.com)}}</pre>"
 	    macro :project_id do |obj, args|
 		return @project.identifier
 	    end
