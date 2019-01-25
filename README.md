@@ -6,6 +6,7 @@ Redmine plugin extending macros Wiki
 * {{project_name}}
 * {{project_email(example.com)}}
 * {{current_user_mail}}
+* {{url_with_mail(example.com?mail=)}}
 
 ## install
 ```
